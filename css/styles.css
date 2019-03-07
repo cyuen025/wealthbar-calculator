@@ -1,0 +1,165 @@
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+label {
+  display: block;
+  width: 60%;
+  font-weight: 600;
+  text-align: left;
+  align-self: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.input-container,
+.result-container {
+  width: 100%;
+  max-width: 60rem;
+  background: #edf7f5;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.input-container {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.result-container {
+  margin-bottom: 5rem;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.input-group:last-of-type {
+  margin-bottom: 0;
+}
+
+input[type="text"] {
+  padding: 8px 25px;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+  transition: .3s ease;
+  text-align: right;
+  width: 100%;
+  color: #666;
+}
+
+input[type="text"]:focus {
+  border-color: #72e8d1;
+}
+
+.text-input {
+  position: relative;
+  width: 40%;
+}
+
+.dollar,
+.percent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: #666;
+}
+
+.percent {
+  right: 8px;
+}
+
+.dollar {
+  left: 8px;
+}
+
+.error {
+  position: absolute;
+  left: 105%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 1.4rem;
+  background: #fff;
+  border: 1px solid #da4747;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #da4747;
+}
+
+.error:before {
+  position: absolute;
+  content: "";
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid #da4747;
+  left: -10px;
+  top: 6px;
+}
+
+.error:after {
+  position: absolute;
+  content: "";
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 9px solid #fff;
+  left: -8px;
+  top: 7px;
+}
+
+table {
+  width: 100%;
+  text-align: right;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead {
+  border-bottom: 1px solid #adadad;
+}
+
+th,
+td {
+  padding: 10px 0;
+}
+
+th:nth-of-type(1) {
+  width: 35%;
+}
+
+th:nth-of-type(2),
+th:nth-of-type(3) {
+  width: 32.5%;
+}
+
+td:nth-of-type(1) {
+  text-align: left;
+  font-weight: 600;
+}

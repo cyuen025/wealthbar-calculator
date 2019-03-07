@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TSFA vs RRSP Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>TSFA vs RRSP Calculator</h1>
+  <div class="input-container">
+    <div class="input-group">
+      <label>Current Marginal Tax Rate</label>
+      <div class="text-input">
+        <span class="percent">%</span>
+        <input type="text" id="cur_tax_rate" />
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Average Tax Rate in Retirement</label>
+      <div class="text-input">
+        <span class="percent">%</span>
+        <input type="text" id="ret_tax_rate" />
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Deposit Amount</label>
+      <div class="text-input">
+        <span class="dollar">$</span>
+        <input type="text" id="dep_amount" />
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Years of Investment</label>
+      <div class="text-input">
+        <input type="text" id="yoi" />
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Return On Investment (Annual)</label>
+      <div class="text-input">
+        <span class="percent">%</span>
+        <input type="text" id="roi" />
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Inflation Rate</label>
+      <div class="text-input">
+        <span class="percent">%</span>
+        <input type="text" id="inflat_rate" />
+      </div>
+    </div>
+  </div>
+
+  <div class="result-container">
+    <h2>Comparison Over <span id="year_text">__</span> Years</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>TSFA</th>
+          <th>RRSP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>After-Tax Dollars</td>
+          <td id="tsfa_after_tax"></td>
+          <td id="rrsp_after_tax"></td>
+        </tr>
+        <tr>
+          <td>Future Value</td>
+          <td id="tsfa_fv"></td>
+          <td id="rrsp_fv"></td>
+        </tr>
+        <tr>
+          <td>Tax Paid</td>
+          <td id="tsfa_tax_paid"></td>
+          <td id="rrsp_tax_paid"></td>
+        </tr>
+        <tr>
+          <td>After-Tax Future Value</td>
+          <td id="tsfa_after_tax_fv"></td>
+          <td id="rrsp_after_tax_fv"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
