@@ -48,6 +48,10 @@ function allFieldsFilled() {
   return fieldsFilled;
 }
 
+// cont = contribution amount
+// nom = nominal rate
+// inflat = inflation rate
+// num = number of years of investment
 function calcFutureValue(cont, nom, inflat, num) {
   const realRateOfReturn = ((1 + nom) / (1 + inflat)) - 1;
   const futureValue = cont * ((1 + realRateOfReturn) ** num);
